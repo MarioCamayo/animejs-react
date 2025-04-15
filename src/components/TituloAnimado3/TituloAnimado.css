@@ -1,0 +1,23 @@
+.letra-animada {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 1px;
+  background: linear-gradient(270deg, #f07c29, rgb(235, 157, 47), rgb(233, 229, 8), rgba(239, 166, 8, 0.967));
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradienteMovil 6s ease infinite;
+  white-space: pre;
+}
+
+@keyframes gradienteMovil {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
