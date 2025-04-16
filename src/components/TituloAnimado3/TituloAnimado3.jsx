@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './TituloAnimado.css';
 
-const TituloAnimado = () => {
+const TituloAnimado3 = () => {
   const tituloRef = useRef(null);
   const texto = '¡Hola, Soy Desarrollador Frontend!';
 
@@ -34,10 +34,10 @@ const TituloAnimado = () => {
               duration: 50,
               delay: window.anime.stagger(50, { direction: 'reverse' }),
               complete: () => {
-                setTimeout(animar, 1000);
+                setTimeout(animar, 100);
               }
             });
-          }, 1000);
+          }, 500);
         }
       });
     };
@@ -48,4 +48,4 @@ const TituloAnimado = () => {
   return <h1 ref={tituloRef} style={{ display: 'flex', flexWrap: 'wrap' }} />;
 };
 
-export default TituloAnimado;
+export default TituloAnimado3;
